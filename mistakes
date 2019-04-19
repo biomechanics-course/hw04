@@ -1,0 +1,7 @@
+There is a mistake in the PDF file. 
+The template for Jc (bottom of first page) suggests that element 3,5 should be -Lcos(q2). 
+However, this element should be 0 because it gets multiplied by yc2_dot. 
+Instead, element 3,6 which the template says should be 0 should in fact equal -Lcos(q2) because this the element that gets multiplied by q2_dot.
+
+Also, please note that in the MATLAB subfunction fsimpwalk2Jc it is suggested to work with 3 segments (stance leg, pelvis, swing leg), 
+but its actually easier to work with 2 segments (stance leg, swing leg) and make pelvis a part of the stance leg
